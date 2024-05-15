@@ -1,0 +1,74 @@
+$font-color: #d3d3d3;
+$div_width: 14rem;
+$div_height: 2.7rem;
+.login_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  gap: 15px;
+  user-select: none;
+  p {
+    font-size: 0.6rem;
+  }
+  h1 {
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+}
+.login_check_div {
+  display: flex;
+  width: $div_width;
+  gap: 5px;
+}
+.login_input_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  input[id="text"] {
+    width: $div_width;
+    height: $div_height;
+    border-radius: 5px;
+    border: 0.9px solid #d3d3d3;
+    outline: none;
+    padding: 10px;
+    color: $font-color;
+    background-color: transparent;
+  }
+  input::placeholder {
+    color: $font-color;
+  }
+  p {
+    width: $div_width;
+  }
+}
+.login_button {
+  width: $div_width;
+  height: $div_height;
+  border-radius: 5px;
+  border: none;
+  background-color: #2676c1;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  p {
+    color: $font-color;
+    font-size: 12px;
+    transition: 0.2s ease-in;
+  }
+}
+.login_button:hover {
+  background-color: #1990ff;
+  p {
+    color: #fdfdfd;
+    transition: 0.2s ease-in;
+  }
+  transition: 0.2s ease-in;
+}
+.login_additional_div {
+  display: flex;
+  align-items: center;
+  width: $div_width;
+}
