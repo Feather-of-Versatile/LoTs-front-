@@ -1,0 +1,27 @@
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100dvw;
+  height: 6dvh;
+  padding: 30px;
+  background-color: #181818;
+}
+.logo_font {
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button_login {
+  width: 4rem;
+  height: 5.2dvh;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #d3d3d3;
+  p {
+    color: #2d2d2d;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
