@@ -29,15 +29,21 @@ $div_height: 2.7rem;
 
 .signup_div {
   display: flex;
-  flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
   height: 55dvh;
   width: 27dvw;
-  gap: 25px;
   background-color: black;
-  border-radius: 15px;
+  border-radius: 25px;
   box-shadow: 0px 4px 20px rgba($color: #f2f2f2, $alpha: 0.3);
+}
+.signup_info_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
   input {
     width: $div_width;
     height: $div_height;
@@ -46,11 +52,18 @@ $div_height: 2.7rem;
     outline: none;
     padding: 10px;
     color: $font-color;
-    background-color: transparent;
+    background-color: #000000;
   }
   input::placeholder {
     color: $font-color;
   }
+  z-index: 2;
+}
+.signup_div:hover::after {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 .signup_button {
   width: $div_width;
@@ -67,7 +80,7 @@ $div_height: 2.7rem;
   }
 }
 
-.signup_button:hover {
+.signup_button[id="clickd"]:hover {
   background-color: #1990ff;
   p {
     color: #fdfdfd;
@@ -78,4 +91,18 @@ $div_height: 2.7rem;
 
 .signup_button_clickd {
   background-color: #878787;
+}
+.overlay {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  //   opacity: 0.3;
+  background: radial-gradient(circle, #f2f2f2 0%, rgba(255, 255, 255, 0) 40%);
+  //   background-position: 100%;
+
+  filter: brightness(1.1) opacity(0.3);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: top 0.15s ease-out, left 0.15s ease-out;
+  z-index: 1;
 }
