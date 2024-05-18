@@ -54,6 +54,7 @@ const page = () => {
                             type='button'
                             className={`${S.signup_button} ${singCheck ? '' : S.signup_button_clickd}`}
                             id={`${singCheck ? ('clickd') : (null)}`}
+                            disabled={!singCheck}
                         >
                             <p>회원가입</p>
                         </button>

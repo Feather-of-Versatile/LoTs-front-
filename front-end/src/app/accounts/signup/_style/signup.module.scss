@@ -1,4 +1,4 @@
-$font-color: #d3d3d3;
+$colors: #fdfdfd;
 $div_width: 14rem;
 $div_height: 2.7rem;
 .signup_container {
@@ -12,7 +12,7 @@ $div_height: 2.7rem;
   align-items: end;
   width: 100dvw;
   padding-left: 70px;
-  color: $font-color;
+  color: $colors;
   h1 {
     font-size: 46px;
   }
@@ -33,10 +33,10 @@ $div_height: 2.7rem;
   align-items: center;
   justify-content: center;
   height: 55dvh;
-  width: 27dvw;
-  background-color: black;
-  border-radius: 25px;
-  box-shadow: 0px 4px 20px rgba($color: #f2f2f2, $alpha: 0.3);
+  width: 23dvw;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba($color: $colors, $alpha: 0.2);
 }
 .signup_info_div {
   display: flex;
@@ -48,22 +48,16 @@ $div_height: 2.7rem;
     width: $div_width;
     height: $div_height;
     border-radius: 5px;
-    border: 0.9px solid #d3d3d3;
+    border: 0.9px solid $colors;
     outline: none;
     padding: 10px;
-    color: $font-color;
-    background-color: #000000;
+    color: $colors;
+    background-color: #252525;
   }
   input::placeholder {
-    color: $font-color;
+    color: $colors;
   }
   z-index: 2;
-}
-.signup_div:hover::after {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: red;
 }
 .signup_button {
   width: $div_width;
@@ -74,7 +68,7 @@ $div_height: 2.7rem;
   transition: 0.2s ease-in;
   cursor: pointer;
   p {
-    color: $font-color;
+    color: $colors;
     font-size: 12px;
     transition: 0.2s ease-in;
   }
@@ -97,12 +91,12 @@ $div_height: 2.7rem;
   width: 170px;
   height: 170px;
   //   opacity: 0.3;
-  background: radial-gradient(circle, #f2f2f2 0%, rgba(255, 255, 255, 0) 40%);
+  background: radial-gradient(circle, $colors 0%, rgba(255, 255, 255, 0) 40%);
   //   background-position: 100%;
 
   filter: brightness(1.1) opacity(0.3);
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: top 0.15s ease-out, left 0.15s ease-out;
+  transition: top 0.2s ease-out, left 0.2s ease-out;
   z-index: 1;
 }
