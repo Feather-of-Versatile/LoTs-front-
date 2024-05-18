@@ -1,4 +1,4 @@
-$font-color: #d3d3d3;
+$colors: #fdfdfd;
 $div_width: 14rem;
 $div_height: 2.7rem;
 .login_container {
@@ -6,7 +6,7 @@ $div_height: 2.7rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100dvh;
+  height: 80dvh;
   gap: 15px;
   user-select: none;
   p {
@@ -32,14 +32,14 @@ $div_height: 2.7rem;
     width: $div_width;
     height: $div_height;
     border-radius: 5px;
-    border: 0.9px solid #d3d3d3;
+    border: 0.9px solid $colors;
     outline: none;
     padding: 10px;
-    color: $font-color;
+    color: $colors;
     background-color: transparent;
   }
   input::placeholder {
-    color: $font-color;
+    color: $colors;
   }
   p {
     width: $div_width;
@@ -54,7 +54,7 @@ $div_height: 2.7rem;
   transition: 0.2s ease-in;
   cursor: pointer;
   p {
-    color: $font-color;
+    color: $colors;
     font-size: 12px;
     transition: 0.2s ease-in;
   }
