@@ -4,21 +4,21 @@ import Link from 'next/link';
 //href="/team/make_up"
 const Nav = () => {
     return (
-        <div className={S.nav_container}>
+        <nav className={S.nav_container}>
             <Link href="/" className={S.logo_font}>LoTs</Link>
-            <Link href="/">
+            <Link href="/" id='nav_font'>
                 <p>전적 검색</p>
             </Link>
-            <Link href="/">
+            <Link href="/team/lol" id='nav_font'>
                 <p>팀 구성</p>
             </Link>
-            <Link href="/">
+            <Link href="/" id='nav_font'>
                 <p>팀 구하기</p>
             </Link>
             {
                 true ?
                     (
-                        <Link href="/accounts/login">
+                        <Link href="/accounts/login" id='nav_login'>
                             <p>로그인</p>
                         </Link>
                     ) :
@@ -26,7 +26,7 @@ const Nav = () => {
                         <p>로그아웃</p>
                     </button>)
             }
-        </div>
+        </nav>
     )
 }
 

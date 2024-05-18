@@ -3,13 +3,35 @@
   align-items: center;
   justify-content: space-between;
   width: 100dvw;
-  height: 6dvh;
-  padding: 30px;
-  background-color: #181818;
+  height: 5dvh;
+  padding: 25px;
+  background-color: #353535;
   user-select: none;
+  color: #fdfdfd;
+  a[id="nav_font"] {
+    text-align: center;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    transition: 0.15s ease-in;
+    padding: 6px 10px 6px 10px;
+  }
+  a[id="nav_login"] {
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.15s ease-in;
+    padding: 6px 10px 6px 10px;
+  }
+  a[id="nav_font"]:hover {
+    background-color: #252525;
+    transition: 0.15s ease-in;
+  }
+  a[id="nav_font"]:focus {
+    background-color: #252525;
+  }
 }
 .logo_font {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
 }
