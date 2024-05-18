@@ -1,0 +1,125 @@
+$width_team_size: 19rem;
+$width_result_size: 34rem;
+$font_color: #fdfdfd;
+//lol_team
+.lol_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px;
+}
+.lol_team_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+  button {
+    width: $width_team_size;
+    border: none;
+    height: 2.7rem;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    p {
+      font-size: 0.8rem;
+      color: $font_color;
+    }
+  }
+  button[id="link"] {
+    background-color: #2676c1;
+  }
+  button[id="link"]:hover {
+    background-color: #1990ff;
+    transition: 0.2s ease-in;
+  }
+  button[id="team"] {
+    background-color: #e97b3d;
+  }
+  button[id="team"]:hover {
+    background-color: #ff8946;
+  }
+}
+
+.lol_team_list {
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+  width: $width_team_size;
+  background-color: #353535;
+  overflow: scroll;
+  border-radius: 7px;
+}
+
+.lol_team_list_item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  transition: 0.2s ease-in;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.lol_team_list_item:hover {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #454545;
+  padding: 10px;
+  transition: 0.2s ease-out;
+}
+
+//lol_result
+.lol_result_div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  button {
+    width: $width_result_size;
+    border: none;
+    height: 2.7rem;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    background-color: #2676c1;
+    cursor: pointer;
+    p {
+      font-size: 0.8rem;
+      color: $font_color;
+    }
+  }
+  button:hover {
+    background-color: #1990ff;
+    transition: 0.2s ease-in;
+  }
+}
+
+.lol_result_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 44rem;
+  width: $width_result_size;
+  background-color: #353535;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.lol_result_fieldset {
+  border: 1px solid $font_color;
+  border-radius: 10px;
+  legend {
+    text-align: center;
+    color: $font_color;
+    font-size: 1.2rem;
+    padding: 0px 10px 0px 10px;
+  }
+  width: 90%;
+  padding: 30px;
+}
