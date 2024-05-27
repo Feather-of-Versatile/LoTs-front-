@@ -35,8 +35,9 @@ $div_height: 2.7rem;
   height: 55dvh;
   width: 23dvw;
   background-color: transparent;
-  border-radius: 10px;
-  box-shadow: 0px 4px 20px rgba($color: $colors, $alpha: 0.2);
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba($color: $colors, $alpha: 0.2),
+    0px 0px 8px $colors inset;
 }
 .signup_info_div {
   display: flex;
