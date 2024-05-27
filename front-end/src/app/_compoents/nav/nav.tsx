@@ -1,5 +1,5 @@
 import React from 'react'
-import S from '../nav/_style/nav.module.scss';
+import S from './_style/nav.module.scss';
 import Link from 'next/link';
 //href="/team/make_up"
 const Nav = () => {
@@ -9,7 +9,7 @@ const Nav = () => {
             <Link href="/" id='nav_font'>
                 <p>전적 검색</p>
             </Link>
-            <Link href="/team/lol" id='nav_font'>
+            <Link href="/team" id='nav_font'>
                 <p>팀 구성</p>
             </Link>
             <Link href="/" id='nav_font'>
