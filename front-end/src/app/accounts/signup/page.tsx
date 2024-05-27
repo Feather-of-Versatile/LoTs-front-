@@ -44,9 +44,9 @@ const page = () => {
             <div className={S.signup_item_div} >
                 <div className={S.signup_div} ref={cursorRef} id='container' onMouseEnter={() => handleMouseEnter()} onMouseLeave={() => { handleMouseLeave() }}>
                     <div className={S.signup_info_div} >
-                        <input type='email' placeholder='이메일 주소' id='text' />
-                        <input type='password' placeholder='비밀번호' id='text' />
-                        <input type='password' placeholder='비밀번호 확인' id='text' />
+                        <input type='email' placeholder='이메일 주소' id='text' name='email' />
+                        <input type='password' placeholder='비밀번호' id='text' name='password' />
+                        <input type='password' placeholder='비밀번호 확인' id='text' name='verify_password' />
                         <button type='button' className={S.signup_button} onClick={() => emailCheck()} id='clickd'>
                             <p>이메일 확인 전송</p>
                         </button>
