@@ -7,6 +7,7 @@ $font_color: #fdfdfd;
   align-items: center;
   justify-content: center;
   margin: 60px;
+  height: 48rem;
 }
 .lol_team_div {
   display: flex;
@@ -15,15 +16,16 @@ $font_color: #fdfdfd;
   justify-content: center;
   flex: 1;
   gap: 20px;
+  height: 100%;
   button {
     width: $width_team_size;
     border: none;
-    height: 2.7rem;
+    min-height: 2.7rem;
     border-radius: 5px;
     transition: 0.2s ease-in;
     cursor: pointer;
+    font-size: 0.8rem;
     p {
-      font-size: 0.8rem;
       color: $font_color;
     }
   }
@@ -80,6 +82,7 @@ $font_color: #fdfdfd;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  height: 100%;
   button {
     width: $width_result_size;
     border: none;
