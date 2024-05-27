@@ -104,3 +104,17 @@ a {
     color-scheme: dark;
   }
 }
+.swal-title {
+  font-size: 1.7rem;
+  color: #252525;
+}
+
+.swal-button {
+  color: #f2f2f2;
+  background-color: #2676c1;
+  transition: background-color 0.2s ease-in;
+  &:not([disabled]):hover {
+    background-color: #1990ff;
+    transition: background-color 0.2 ease-in;
+  }
+}
