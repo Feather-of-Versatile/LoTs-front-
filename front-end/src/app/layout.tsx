@@ -12,7 +12,7 @@ const noto_sans = Noto_Sans_KR({ subsets: ['latin'] });
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  types?: string; // 선택적 필드 추가
+  types: string; // 선택적 필드 추가
 }
 
 export default function RootLayout({
