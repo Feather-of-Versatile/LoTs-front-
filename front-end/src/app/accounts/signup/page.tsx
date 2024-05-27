@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react'
 import S from './_style/signup.module.scss'
-const page = () => {
+const Page = () => {
     const [singCheck, setSingCheck] = useState(false);
     const cursorRef = useRef<HTMLDivElement>(null);
     const [isHovered, setIsHovered] = useState(false);
@@ -69,4 +69,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

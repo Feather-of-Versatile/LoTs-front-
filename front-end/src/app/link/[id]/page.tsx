@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import S from '../../accounts/signup/_style/signup.module.scss'
-const page = () => {
+const Page = () => {
     const [singCheck, setSingCheck] = useState(false);
     const [riotID, setRiotID] = useState('');
     const onChange = (text: string) => {
@@ -29,4 +29,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

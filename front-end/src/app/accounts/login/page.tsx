@@ -1,7 +1,7 @@
 import React from 'react'
 import S from './_style/login.module.scss'
 import Link from 'next/link'
-const page = () => {
+const Page = () => {
     return (
         <div className={S.login_container}>
             <h1>로그인</h1>
@@ -24,4 +24,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

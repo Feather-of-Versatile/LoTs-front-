@@ -3,7 +3,7 @@ import React from 'react'
 import S from './_style/lol.module.scss'
 import TeamNav from '../_compoents/team-nav/team-nav'
 import swal from 'sweetalert'
-const page = () => {
+const Page = () => {
     const copyToClipboard = async (text: string) => {
         const url = "http://localhost:3000/link";
         swal('클립보드 복사', '클립보드를 공유하세요!', 'success')
@@ -68,4 +68,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
