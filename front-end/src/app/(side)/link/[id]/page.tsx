@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import S from '../../../main/accounts/signup/_style/signup.module.scss'
+import S from '../../../(main)/accounts/signup/_style/signup.module.scss'
 const Page = () => {
     const [singCheck, setSingCheck] = useState(false);
     const [riotID, setRiotID] = useState('');
