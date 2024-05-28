@@ -1,17 +1,9 @@
 'use client'
 import React from 'react'
 import S from './_style/lol.module.scss'
-import TeamNav from '../_compoents/team-nav/team-nav'
-import swal from 'sweetalert'
+import TeamNav from '../../_compoents/team-nav/team-nav'
+import { copyToClipboard } from '../../_compoents/modal/modal'
 const Page = () => {
-    const copyToClipboard = async (text: string) => {
-        const url = "http://localhost:3000/link";
-        swal('클립보드 복사', '클립보드를 공유하세요!', 'success')
-            .then(async () => {
-                await navigator.clipboard.writeText(`${url}/${text}`);
-            });
-    };
-
     return (
         <div className={S.lol_container}>
             <div className={S.lol_team_div}>

@@ -16,7 +16,7 @@ const Page = () => {
             <button type='button' className={S.login_button}>
                 <p>로그인</p>
             </button>
-            <Link href='/accounts/signup'>
+            <Link href='/main/accounts/signup'>
                 <p>계정 생성</p>
             </Link>
             <p>비밀번호 찾기</p>

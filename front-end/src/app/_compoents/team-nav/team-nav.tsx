@@ -1,10 +1,6 @@
 "use client"
 import React, { useState } from 'react'
 import S from './_style/team-nav.module.scss'
-import LolSvg from '@public/images/lol_icon.svg'
-import ValSvg from '@public/images/val_icon.svg'
-import TftSvg from '@public/images/tft_icon.svg'
-import { ListItem } from 'types'
 import { initialList } from '../../_data/data'
 
 const TeamNav = () => {
