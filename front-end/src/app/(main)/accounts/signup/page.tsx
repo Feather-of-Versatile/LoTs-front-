@@ -2,14 +2,14 @@
 import React, { useEffect, useRef, useState } from 'react'
 import S from './_style/signup.module.scss'
 const Page = () => {
-    const [singCheck, setSingCheck] = useState(false);
+    const [signCheck, setSignCheck] = useState(false);
     const cursorRef = useRef<HTMLDivElement>(null);
     const [isHovered, setIsHovered] = useState(false);
     const [coords, setCoords] = useState({ x: 0, y: 0 });
     const handleMouseEnter = () => setIsHovered(true);
     const handleMouseLeave = () => setIsHovered(false);
     const emailCheck = () => {
-        setSingCheck(!singCheck);
+        setSignCheck(!signCheck);
     }
     useEffect(() => {
         const refCurrent = cursorRef.current
@@ -52,9 +52,9 @@ const Page = () => {
                         </button>
                         <button
                             type='button'
-                            className={`${S.signup_button} ${singCheck ? '' : S.signup_button_clickd}`}
-                            id={`${singCheck ? ('clickd') : (null)}`}
-                            disabled={!singCheck}
+                            className={`${S.signup_button} ${signCheck ? '' : S.signup_button_clickd}`}
+                            id={`${signCheck ? ('clickd') : (null)}`}
+                            disabled={!signCheck}
                         >
                             <p>회원가입</p>
                         </button>
